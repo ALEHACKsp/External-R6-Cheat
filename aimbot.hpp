@@ -79,7 +79,7 @@ inline auto get_best_target() -> entity_t {
 inline auto aimbot() -> void {
 	if (!globals::aimbot) return;
 
-	if (GetAsyncKeyState(VK_RBUTTON) && GetActiveWindow() == FindWindowA(E("R6Game"), 0)) {
+	if (GetAsyncKeyState(VK_RBUTTON) && GetForegroundWindow() == FindWindowA(E("R6Game"), 0)) {
 		auto target = get_best_target();
 		if (!target.controller || !target.pawn) return;
 		
