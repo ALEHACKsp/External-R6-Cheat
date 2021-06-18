@@ -1,5 +1,7 @@
 # External R6 Cheat
 
+Basic R6 Cheat
+
 ## Features
 > Aimbot (Toggle with F1)
 
